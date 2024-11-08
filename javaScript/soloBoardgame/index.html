@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas 11x11 Mezőkkel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="main_content">
+        <div class="left_container">
+            <canvas id="canvas" width="660" height="660"></canvas>
+        </div>
+
+        <div class="right_container">
+
+            <div class="top_container">
+
+                <div class="season_container">
+                    <div class="sprint"><span>Tavasz: <span id="springValue">0</span> Pont</span></div>
+                    <div class="summer"><span>Nyár: <span id="summerValue">0</span> Pont</span></div>
+                    <div class="autumn"><span>Ősz: <span id="autumnValue">0</span> Pont</span></div>
+                    <div class="winter"><span>Tél: <span id="winterValue">0</span> Pont</span></div>
+                </div>
+                <span class="total_points">Összes pont: <span id="totalPoint">0</span></span>
+                <span class="importantText">Jelenlegi évszak: <span class="importantText" id="actualSeason">
+                        Tavasz(AB)</span></span>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <img id="missionA" alt="Kép 1">
+                        <span>A. Küldetés: <span id="missionAValue">0</span> pont</span>
+                    </td>
+
+                    <td>
+                        <img id="missionB" alt="Kép 2">
+                        <span>B. Küldetés: <span id="missionBValue">0</span> pont</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="missionC" alt="Kép 3">
+                        <span>C. Küldetés: <span id="missionCValue">0</span> pont</span>
+                    </td>
+                    <td>
+                        <img id="missionD" alt="Kép 4">
+                        <span>D. Küldetés: <span id="missionDValue">0</span> pont</span>
+                    </td>
+                </tr>
+            </table>
+            <span class="importantText">Aktuaális évszakból hátravan: 7/<span class="importantText"
+                    id="actualSeasonValue">7</span>
+            </span>
+            <div class="bottom_container">
+                <div class="inner_container">
+                    <span>Lehelyezendő elem:</span>
+                    <span><span id="ACTUALTIME">0</span> időegység</span>
+                    <button type="button" id="rotate">Forgatás</button>
+                    <button type="button" id="mirror">Tükrözés</button>
+                </div>
+                <canvas id="canvas2" width="180" height="180"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

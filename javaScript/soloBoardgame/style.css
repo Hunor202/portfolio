@@ -1,0 +1,228 @@
+body {
+    background-image: url("assets/theme.png");
+    background-color: #ccc;
+    margin: 0;
+    padding: 20px;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+#canvas {
+    display: block;
+    margin: 0;
+
+}
+
+.left_container {
+    display: flex;
+    justify-content: start;
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.right_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.total_points {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.season_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.season_container .sprint {
+    background-color: lightgreen;
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 25%;
+    width: 100%;
+    padding: 50px;
+}
+
+.season_container .summer {
+    background-color: lightyellow;
+    border: 3px solid orange;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 25%;
+    width: 100%;
+    padding: 50px;
+}
+
+.season_container .winter {
+    background-color: lightblue;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 25%;
+    width: 100%;
+    padding: 50px;
+}
+
+.season_container .autumn {
+    background-color: rgb(255, 157, 0);
+    border: 3px solid brown;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 25%;
+    width: 100%;
+    padding: 50px;
+}
+
+.bottom_container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    border-top: 2px solid gray;
+}
+
+.inner_container {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inner_container span {
+    font-size: 30px;
+}
+
+.inner_container button {
+    max-width: 200px;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(41, 108, 16);
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+table tr {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+table tbody td {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+table tbody td span {
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:1400px) {
+    .main_content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left_container {
+        max-width: unset;
+        justify-content: center;
+    }
+
+    .season_container .autumn,
+    .season_container .sprint,
+    .season_container .summer,
+    .season_container .winter {
+        padding: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    table tr {
+        flex-wrap: wrap;
+    }
+
+    canvas {
+        max-width: 280px;
+    }
+
+    .season_container {
+        flex-wrap: wrap;
+    }
+
+    .season_container div {
+        max-width: unset !important;
+        width: 100%;
+    }
+}
+
+@media (max-width:700px) {
+    .bottom_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.importantText {
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 2px 16px rgba(0, 0, 0, 0.85);
+}
